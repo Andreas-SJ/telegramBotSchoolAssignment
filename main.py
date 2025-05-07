@@ -1,4 +1,4 @@
-from credentials import token
+from credentials import botToken
 import logging
 from telegram import ForceReply, Update
 
@@ -61,7 +61,7 @@ async def weather_command(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
 def main() -> None:
 
-    application = Application.builder().token(token).build()
+    application = Application.builder().token(botToken).build()
 
     application.add_handler(CommandHandler("start", start))
 
