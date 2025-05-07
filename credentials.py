@@ -1,0 +1,3 @@
+botToken = ""
+weatherUserAgent = ""
+geoUserAgent = ""
